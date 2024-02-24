@@ -105,21 +105,39 @@ Dengan menggunakan metrik evaluasi ini, dievaluasi kinerja model secara holistik
 
 Dalam proyek ini, model k-Nearest Neighbors (k-NN) memiliki performa terbaik dengan akurasi sebesar 90%. Ini menunjukkan bahwa model k-NN mampu memprediksi kelas dengan tingkat keberhasilan yang tinggi dibandingkan dengan model lainnya. Namun, untuk mendapatkan pemahaman yang lebih holistik, perlu juga mempertimbangkan presisi, recall, dan F1-score untuk memastikan bahwa model mampu melakukan prediksi dengan baik untuk semua kelas dan tidak hanya mengandalkan akurasi saja.
 
-![image](https://github.com/fachrinnk4869/apple-quality-predictive/assets/92314386/f3eecbde-d891-454d-965b-353c7c3dc04d)
+Tabel 1. Prediksi hasil *KNN Classifer*
 
-Gambar 3. Prediksi hasil *KNN Classifer*
+|   |precision|recall|f1-score|support|
+|---|---|---|---|---|
+|0|0.90|0.91|0.90|195|
+|1|0.90|0.89|0.90|184|
+|accuracy|   |   |0.90|379|
+|macro avg|0.90|0.90|0.90|379|
+|weighted avg|0.90|0.90|0.90|379|
 
-![image](https://github.com/fachrinnk4869/apple-quality-predictive/assets/92314386/cecf3601-fa34-407b-b848-61dc54894a15)
+Tabel 2. Prediksi hasil *Random Forest Classifer*
 
-Gambar 4. Prediksi hasil *Random Forest Classifer*
+|   |precision|recall|f1-score|support|
+|---|---|---|---|---|
+|0|0.87|0.89|0.88|195|
+|1|0.88|0.85|0.87|184|
+|accuracy|   |   |0.87|379|
+|macro avg|0.87|0.87|0.87|379|
+|weighted avg|0.87|0.87|00.87|379|
 
-![image](https://github.com/fachrinnk4869/apple-quality-predictive/assets/92314386/9db6b6ec-1bcf-46a9-9d47-df6f8776ece6)
+Tabel 3. Prediksi hasil *Adaboost Classifer*
 
-Gambar 5. Prediksi hasil *Adaboost Classifer*
+|   |precision|recall|f1-score|support|
+|---|---|---|---|---|
+|0|0.68|0.42|0.52|195|
+|1|0.56|0.79|0.66|184|
+|accuracy|   |   |0.600.87|379|
+|macro avg|0.62|0.60|0.59|379|
+|weighted avg|0.62|0.60|00.59|379|
 
 ![image](https://github.com/fachrinnk4869/apple-quality-predictive/assets/92314386/453a4905-cddc-42b3-9731-62270cf03e22)
 
-Gambar 6. Perbandingan akurasi setiap model
+Gambar 4. Perbandingan akurasi setiap model
 
 ## Daftar Pustaka
 
