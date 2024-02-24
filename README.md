@@ -131,9 +131,9 @@ Tabel 3. Prediksi hasil *Adaboost Classifer*
 |---|---|---|---|---|
 |0|0.68|0.42|0.52|195|
 |1|0.56|0.79|0.66|184|
-|accuracy|   |   |0.600.87|379|
+|accuracy|   |   |0.60|379|
 |macro avg|0.62|0.60|0.59|379|
-|weighted avg|0.62|0.60|00.59|379|
+|weighted avg|0.62|0.60|0.59|379|
 
 ![image](https://github.com/fachrinnk4869/apple-quality-predictive/assets/92314386/453a4905-cddc-42b3-9731-62270cf03e22)
 
