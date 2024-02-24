@@ -78,29 +78,17 @@ Library scikit-learn digunakan untuk mengimplementasikan algoritma machine learn
 - Setelah dilatih, model digunakan untuk membuat prediksi terhadap data pengujian (X_test) dengan memanggil metode .predict().
 - Model KNN tidak menggunakan parameter yang disesuaikan dalam contoh ini, sehingga tidak ada parameter yang diatur secara eksplisit.
 
-![image](https://github.com/fachrinnk4869/apple-quality-predictive/assets/92314386/f3eecbde-d891-454d-965b-353c7c3dc04d)
-
-Gambar 3. Prediksi hasil *KNN Classifer*
-
 2. *Random Forest*:
 - Model Random Forest diinisialisasi dengan menentukan nilai parameter n_estimators=200. Parameter ini mengatur jumlah pohon dalam ensemble.
 - Setelah inisialisasi, model dilatih menggunakan data pelatihan yang sama seperti KNN.
 - Setelah pelatihan selesai, model digunakan untuk memprediksi kelas target pada data pengujian.
 - Dalam contoh ini, nilai parameter n_estimators diatur menjadi 200, dan random_state=123 digunakan untuk membuat hasil yang dapat direproduksi.
 
-![image](https://github.com/fachrinnk4869/apple-quality-predictive/assets/92314386/cecf3601-fa34-407b-b848-61dc54894a15)
-
-Gambar 4. Prediksi hasil *Random Forest Classifer*
-
 3. *AdaBoost (Adaptive Boosting)*:
 - Model AdaBoost diinisialisasi dengan menentukan nilai parameter learning_rate=0.001 dan random_state=55.
 - Setelah inisialisasi, model dilatih menggunakan data pelatihan yang sama.
 - Kemudian, model digunakan untuk memprediksi kelas target pada data pengujian.
 - Parameter learning_rate=0.001 digunakan untuk mengontrol kontribusi setiap model pelatihan terhadap keseluruhan prediksi, sedangkan random_state=55 digunakan untuk membuat hasil yang dapat direproduksi.
-
-![image](https://github.com/fachrinnk4869/apple-quality-predictive/assets/92314386/9db6b6ec-1bcf-46a9-9d47-df6f8776ece6)
-
-Gambar 5. Prediksi hasil *Adasboost Classifer*
 
 Hasil prediksi setiap model kemudian dievaluasi menggunakan metrik akurasi, confusion matrix, dan classification report.
 
@@ -113,9 +101,21 @@ Metrik evaluasi yang digunakan adalah akurasi, presisi, recall, dan F1-score.
 - Recall: Merupakan rasio antara jumlah kelas positif yang benar diprediksi oleh model dengan total jumlah data yang benar kelas positif. Recall mengukur seberapa baik model dalam menemukan semua contoh positif.
 - F1-score: Merupakan rata-rata harmonis dari presisi dan recall. F1-score memberikan keseimbangan antara presisi dan recall, dan sering digunakan sebagai metrik evaluasi jika terdapat ketidakseimbangan antara kelas-kelas dalam data.
 
-Dengan menggunakan metrik evaluasi ini, kita dapat mengevaluasi kinerja model secara holistik, mempertimbangkan trade-off antara presisi dan recall. Sebagai contoh, meskipun model memiliki akurasi tinggi, presisi dan recall yang rendah dapat menunjukkan bahwa model tidak cukup baik dalam mengidentifikasi kelas tertentu dengan benar.
+Dengan menggunakan metrik evaluasi ini, dievaluasi kinerja model secara holistik, mempertimbangkan trade-off antara presisi dan recall. Sebagai contoh, meskipun model memiliki akurasi tinggi, presisi dan recall yang rendah dapat menunjukkan bahwa model tidak cukup baik dalam mengidentifikasi kelas tertentu dengan benar.
 
 Dalam proyek ini, model k-Nearest Neighbors (k-NN) memiliki performa terbaik dengan akurasi sebesar 90%. Ini menunjukkan bahwa model k-NN mampu memprediksi kelas dengan tingkat keberhasilan yang tinggi dibandingkan dengan model lainnya. Namun, untuk mendapatkan pemahaman yang lebih holistik, perlu juga mempertimbangkan presisi, recall, dan F1-score untuk memastikan bahwa model mampu melakukan prediksi dengan baik untuk semua kelas dan tidak hanya mengandalkan akurasi saja.
+
+![image](https://github.com/fachrinnk4869/apple-quality-predictive/assets/92314386/f3eecbde-d891-454d-965b-353c7c3dc04d)
+
+Gambar 3. Prediksi hasil *KNN Classifer*
+
+![image](https://github.com/fachrinnk4869/apple-quality-predictive/assets/92314386/cecf3601-fa34-407b-b848-61dc54894a15)
+
+Gambar 4. Prediksi hasil *Random Forest Classifer*
+
+![image](https://github.com/fachrinnk4869/apple-quality-predictive/assets/92314386/9db6b6ec-1bcf-46a9-9d47-df6f8776ece6)
+
+Gambar 5. Prediksi hasil *Adaboost Classifer*
 
 ![image](https://github.com/fachrinnk4869/apple-quality-predictive/assets/92314386/453a4905-cddc-42b3-9731-62270cf03e22)
 
